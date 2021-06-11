@@ -16,7 +16,7 @@ Check out a deployed version [here](https://tassock.github.io/mobilize-feed/), o
 * Google Maps - Commons maps library, already used by Mobilize
 * google-map-react - react wrapper for Google Maps API that does what we need it to do, at least for this example. Had more stars and fewer open issues than `google-maps-react` library.
 
-#Overview of architecture
+## Overview of architecture
 Kept this pretty simple. Most of the code and all of the state is in App.js. Used vanilla CSS. Just imported one react library for the map. For automated testing, I used a mock response to validate that list (main requirement) renders as expected.
 
 ## Features implemented
