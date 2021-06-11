@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import EventCard from './components/EventCard';
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
         <h1>Mobilize Feed</h1>
         <div>
           {events.map(event => (
-            <div key={event.id}>{event.title}</div>
+            <EventCard props={event} key={event.id} />
           ))}
         </div>
       </div>

@@ -5,9 +5,46 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e6e6e6;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.event-card {
+  margin: 1rem;
+  box-shadow: rgb(0 0 0 / 5%) 0px 4px 10px;
+  width: 300px;
+  height: 400px;
+  min-height: 400px;
+  background: white;
+}
+
+.event-card .inner {
+  width: 100%;
+}
+
+.event-card .details {
+  padding: 1rem;
+}
+
+.event-card .image-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding-top: 52.35%;
+}
+
+.event-card .image-container img {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

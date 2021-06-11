@@ -13,3 +13,6 @@ From the project directory, run:
 ## Dependencies
 * ReactJS - Common javascript UI library, already seems to be used by Mobilize
 * create-react-app - Standard react configuration, already seems to be used by Mobilize
+
+## Features implemented
+* A list of upcoming events + their details, specifically: `featured_image_url`, `title`, `timeslots`, `location`, `event_type`, `browser_url`
