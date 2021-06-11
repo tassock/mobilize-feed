@@ -25,7 +25,7 @@ Kept this pretty simple. Most of the code and all of the state is in App.js. Use
 * Pagination of the event list
 * Filter by event type
 
-# Extra credit I thought about implementing, but did not
+## Extra credit I thought about implementing, but did not
 * The ability to filter events based on distance from the user - Would have loved to have figured this one out! I think I would have needed to do some IP geo-coding to get a zip code I could send the API.
 * Infinite scrolling - Spent about half an hour trying to implement this, but realized it was more complicated than I might have had time for and may have resulted in some bugs.
 
