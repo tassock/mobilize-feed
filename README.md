@@ -28,3 +28,5 @@ From the project directory, run:
 ## Technical debt
 * Address browser console warnings
 * Address test console warnings
+* Tests to validate map behavior
+* Tests to validate pagination behavior
