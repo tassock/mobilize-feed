@@ -20,6 +20,7 @@ From the project directory, run:
 * A list of upcoming events + their details, specifically: `featured_image_url`, `title`, `timeslots`, `location`, `event_type`, `browser_url`
 * A map view of event integrated into the main page with red markers
 * Pagination of the event list
+* Filter by event type
 
 ## Suggested UX Improvements
 * Better styling for event cards, including image size handling and layout improvements
@@ -30,3 +31,5 @@ From the project directory, run:
 * Address test console warnings
 * Tests to validate map behavior
 * Tests to validate pagination behavior
+* Look into image performance
+* Look into usability testing

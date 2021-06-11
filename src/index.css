@@ -77,3 +77,7 @@ code {
   border-radius: 10px;
   background: red;
 }
+
+.event-filters {
+  margin-bottom: 20px;
+}
