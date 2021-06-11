@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mobilize-feed/static/css/main.bbecd208.chunk.css",
+    "main.js": "/mobilize-feed/static/js/main.9a56b04b.chunk.js",
+    "main.js.map": "/mobilize-feed/static/js/main.9a56b04b.chunk.js.map",
+    "runtime-main.js": "/mobilize-feed/static/js/runtime-main.2e999a2f.js",
+    "runtime-main.js.map": "/mobilize-feed/static/js/runtime-main.2e999a2f.js.map",
+    "static/js/2.15bebbd3.chunk.js": "/mobilize-feed/static/js/2.15bebbd3.chunk.js",
+    "static/js/2.15bebbd3.chunk.js.map": "/mobilize-feed/static/js/2.15bebbd3.chunk.js.map",
+    "static/js/3.29e26411.chunk.js": "/mobilize-feed/static/js/3.29e26411.chunk.js",
+    "static/js/3.29e26411.chunk.js.map": "/mobilize-feed/static/js/3.29e26411.chunk.js.map",
+    "index.html": "/mobilize-feed/index.html",
+    "static/css/main.bbecd208.chunk.css.map": "/mobilize-feed/static/css/main.bbecd208.chunk.css.map",
+    "static/js/2.15bebbd3.chunk.js.LICENSE.txt": "/mobilize-feed/static/js/2.15bebbd3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e999a2f.js",
+    "static/js/2.15bebbd3.chunk.js",
+    "static/css/main.bbecd208.chunk.css",
+    "static/js/main.9a56b04b.chunk.js"
+  ]
+}
