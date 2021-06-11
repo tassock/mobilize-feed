@@ -1,7 +1,7 @@
 import GoogleMapReact from 'google-map-react';
 const key = "AIzaSyDoRY1XMAC6JJbg7ZhLqkPXsQvywrevXcA" // Should be in secrets and not checked into version control, but moving fast!
 
-const MarkerComponent = ({ text }) => <div>{text}</div>;
+const MarkerComponent = ({ text }) => <div className='event-map-marker' />;
 
 export default function EventMap({ props }) {
   const { events } = props;
@@ -24,8 +24,7 @@ export default function EventMap({ props }) {
         defaultZoom={defaultProps.zoom}
       >
         {filteredEvents.map(event => (
-          <div
-            className='event-map-marker'
+          <MarkerComponent
             key={event.id}
             lat={event.location.location.latitude}
             lng={event.location.location.longitude}
