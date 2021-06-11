@@ -17,7 +17,7 @@ From the project directory, run:
 * google-map-react - react wrapper for Google Maps API that does what we need it to do, at least for this example. Had more stars and fewer open issues than `google-maps-react` library.
 
 #Overview of architecture
-Kept this pretty simple. Most of the code and all of the state is in App.js. Used vanilla CSS. Just imported one react library for the map. For automated testing, I used a mock response to validate that list (main requirement) renders as expected. I didn't get to testing for the other requirements due to time. 
+Kept this pretty simple. Most of the code and all of the state is in App.js. Used vanilla CSS. Just imported one react library for the map. For automated testing, I used a mock response to validate that list (main requirement) renders as expected. 
 
 ## Features implemented
 * A list of upcoming events + their details, specifically: `featured_image_url`, `title`, `timeslots`, `location`, `event_type`, `browser_url`
