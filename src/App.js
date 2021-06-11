@@ -12,6 +12,7 @@ function App() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [events, setEvents] = useState([]);
+  const [nextPage, setNextPage] = useState();
   const [queryParams, setQueryParams] = useState({...defaultParams});
 
 
@@ -22,6 +23,7 @@ function App() {
         (result) => {
           setIsLoaded(true);
           setEvents(result.data);
+          setNextPage(result.next);
         },
         (error) => {
           setIsLoaded(true);
@@ -29,6 +31,22 @@ function App() {
         }
       )
   }, [])
+
+  function loadNextPage(nextPageUrl) {
+    fetch(nextPageUrl)
+      .then(res => res.json())
+      .then(
+        (result) => {
+          setIsLoaded(true);
+          setEvents(result.data);
+          setNextPage(result.next);
+        },
+        (error) => {
+          setIsLoaded(true);
+          setError('Failed to load');
+        }
+      )
+  }
 
   if (error) {
     return <div>Error: {error}</div>;
@@ -43,6 +61,7 @@ function App() {
             <EventCard props={event} key={event.id} />
           ))}
         </div>
+        <button onClick={() => loadNextPage(nextPage)}>Next Page</button>
         <EventMap props={{ events }} />
       </div>
     );

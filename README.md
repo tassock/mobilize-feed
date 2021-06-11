@@ -19,7 +19,12 @@ From the project directory, run:
 ## Features implemented
 * A list of upcoming events + their details, specifically: `featured_image_url`, `title`, `timeslots`, `location`, `event_type`, `browser_url`
 * A map view of event integrated into the main page with red markers
+* Pagination of the event list
 
 ## Suggested UX Improvements
 * Better styling for event cards, including image size handling and layout improvements
 * Add some sort of hover and/or click handlers to event map markers
+
+## Technical debt
+* Address browser console warnings
+* Address test console warnings
