@@ -2,7 +2,7 @@
 Demo frontend app using the Mobilize America API
 
 ## How to run app
-From the project directory, run:
+Check out a deployed version [here](https://tassock.github.io/mobilize-feed/), or clone it on your machine and run the following commands from the project directory:
 
 `npm install` to install dependencies
 
@@ -17,7 +17,7 @@ From the project directory, run:
 * google-map-react - react wrapper for Google Maps API that does what we need it to do, at least for this example. Had more stars and fewer open issues than `google-maps-react` library.
 
 #Overview of architecture
-Kept this pretty simple. Most of the code and all of the state is in App.js. Used vanilla CSS. Just imported one react library for the map. For automated testing, I used a mock response to validate that list (main requirement) renders as expected. 
+Kept this pretty simple. Most of the code and all of the state is in App.js. Used vanilla CSS. Just imported one react library for the map. For automated testing, I used a mock response to validate that list (main requirement) renders as expected.
 
 ## Features implemented
 * A list of upcoming events + their details, specifically: `featured_image_url`, `title`, `timeslots`, `location`, `event_type`, `browser_url`
