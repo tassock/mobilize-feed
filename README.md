@@ -33,6 +33,7 @@ Kept this pretty simple. Most of the code and all of the state is in App.js. Use
 * Better styling for event cards, including image size handling and layout improvements
 * Add some sort of hover and/or click handlers to event map markers
 * Better loading and pagination UX. Not great to be stuck at the bottom of the page.
+* Make map zoom to fit dots rather than include the entire country
 
 ## Technical debt
 * Address browser console warnings
