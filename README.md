@@ -39,5 +39,6 @@ Kept this pretty simple. Most of the code and all of the state is in App.js. Use
 * Address test console warnings
 * Tests to validate map behavior
 * Tests to validate pagination behavior
+* Tests to validate filter behavior
 * Look into image performance / lazy loading
 * Look into usability testing
