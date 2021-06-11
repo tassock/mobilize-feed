@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import EventCard from './components/EventCard';
+import EventMap from './components/EventMap';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
             <EventCard props={event} key={event.id} />
           ))}
         </div>
+        <EventMap props={{ events }} />
       </div>
     );
   }

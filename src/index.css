@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e6e6e6;
+  padding: 1rem;
 }
 
 code {
@@ -14,12 +15,17 @@ code {
 }
 
 .event-card {
-  margin: 1rem;
   box-shadow: rgb(0 0 0 / 5%) 0px 4px 10px;
-  width: 300px;
-  height: 400px;
-  min-height: 400px;
+  width: 30%;
+  max-width: 400px;
   background: white;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .event-card {
+    width: 100%;
+  }
 }
 
 .event-card .inner {
@@ -47,4 +53,27 @@ code {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.event-map-container {
+  height: 100vh;
+  width: 66%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* Hide map on mobile since it's generally not a great UX */
+@media only screen and (max-width: 600px) {
+  .event-map-container {
+    display: none;
+  }
+}
+
+.event-map-marker {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: red;
 }
