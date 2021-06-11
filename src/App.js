@@ -16,8 +16,6 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [events, setEvents] = useState([]);
   const [nextPage, setNextPage] = useState();
-  const [queryParams, setQueryParams] = useState({...defaultParams});
-
 
   function loadEvents({ nextPage, queryParams }) {
     const url = nextPage ? nextPage : (eventsEndpoint + new URLSearchParams(queryParams).toString())
@@ -43,10 +41,10 @@ function App() {
   function renderFilters() {
     return (
       <div className='event-filters'>
-        <label for='event-type-select'>Filter by type:</label>
+        <label htmlFor='event-type-select'>Filter by type:</label>
         <select id='event-type-select' onChange={(e) => loadEvents({ queryParams: { ...defaultParams, event_types: e.target.value }})}>
           {eventTypes.map(eventType => (
-            <option value={eventType}>{eventType}</option>
+            <option value={eventType} key={eventType}>{eventType}</option>
           ))}
         </select>
       </div>
